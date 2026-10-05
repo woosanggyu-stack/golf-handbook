@@ -1,6 +1,7 @@
 import { CATEGORIES, TIPS } from "./data.js";
 import { renderDiagram } from "./diagrams.js";
 import { AREAS, CLUBS } from "./clubs.js";
+import { render as renderInstall } from "./install.js";
 
 const $app = document.getElementById("app");
 const $title = document.getElementById("title");
@@ -80,6 +81,7 @@ function viewHome() {
     </label>
     <div id="results" hidden></div>
     <div id="home-body">
+      <div id="install-slot"></div>
       ${favTips.length || favClubs.length
         ? `<h2>★ 즐겨찾기</h2><div class="list">${favClubs.map(clubRow).join("")}${favTips.map(tipRow).join("")}</div>`
         : ""}
@@ -103,6 +105,8 @@ function viewHome() {
       <p class="note">모든 방향 안내는 오른손잡이 기준입니다.<br>
         <a class="link" href="#/backup">메모·즐겨찾기 백업 ›</a></p>
     </div>`;
+
+  renderInstall();
 
   const $q = document.getElementById("q");
   const $results = document.getElementById("results");
