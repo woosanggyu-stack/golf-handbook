@@ -315,6 +315,384 @@
   "course": "https://www.shinangolf.com/club/course/rivieracc"
  },
  {
+  "id": "강화웰빙CC",
+  "name": "강화웰빙CC",
+  "area": "인천",
+  "region": "강화군",
+  "holes": 9,
+  "home": "https://www.gakorea.com/wellbeing/index.asp",
+  "course": "https://www.gakorea.com/wellbeing/course/course01.asp"
+ },
+ {
+  "id": "유니아일랜드 골프&스파 리조트",
+  "name": "유니아일랜드 골프&스파 리조트",
+  "area": "인천",
+  "region": "강화군",
+  "holes": 18,
+  "home": "https://www.uniisland.com/index",
+  "course": "https://www.uniisland.com/course/main"
+ },
+ {
+  "id": "드림파크CC",
+  "name": "드림파크CC",
+  "area": "인천",
+  "region": "검단구",
+  "holes": 36,
+  "home": "https://www.dreamparkcc.or.kr/",
+  "course": "https://www.dreamparkcc.or.kr/03course/course01.asp"
+ },
+ {
+  "id": "베어즈베스트청라GC",
+  "name": "베어즈베스트청라GC",
+  "area": "인천",
+  "region": "서해구",
+  "holes": 27,
+  "home": "https://www.bearsbestcheongnagc.com/",
+  "course": null
+ },
+ {
+  "id": "인천국제CC",
+  "name": "인천국제CC",
+  "area": "인천",
+  "region": "서해구",
+  "holes": 18,
+  "home": "https://www.incheoncc.com/index.asp",
+  "course": "https://www.incheoncc.com/pagesite/course/intro.asp"
+ },
+ {
+  "id": "인천그랜드CC",
+  "name": "인천그랜드CC",
+  "area": "인천",
+  "region": "서해구",
+  "holes": 18,
+  "home": "https://incheongrand.cc/",
+  "course": "https://incheongrand.cc/pagesite/course/intro.asp"
+ },
+ {
+  "id": "송도골프클럽",
+  "name": "송도골프클럽",
+  "area": "인천",
+  "region": "연수구",
+  "holes": null,
+  "home": "https://songdogolf.co.kr/",
+  "course": "https://songdogolf.co.kr/_course/course01.php"
+ },
+ {
+  "id": "잭니클라우스GC코리아",
+  "name": "잭니클라우스GC코리아",
+  "area": "인천",
+  "region": "연수구",
+  "holes": 18,
+  "home": "https://www.jacknicklausgolfclubkorea.com/",
+  "course": null
+ },
+ {
+  "id": "베르힐CC 영종",
+  "name": "베르힐CC 영종",
+  "area": "인천",
+  "region": "영종구",
+  "holes": 36,
+  "home": "https://www.verthillccyj.com/index.asp",
+  "course": "https://www.verthillccyj.com/course/courseGuide.asp"
+ },
+ {
+  "id": "오렌지듄스영종GC",
+  "name": "오렌지듄스영종GC",
+  "area": "인천",
+  "region": "영종구",
+  "holes": 18,
+  "home": "https://www.orangedunesyj.com/",
+  "course": "https://www.orangedunesyj.com/course-guide"
+ },
+ {
+  "id": "클럽72CC",
+  "name": "클럽72CC",
+  "area": "인천",
+  "region": "영종구",
+  "holes": null,
+  "home": "https://www.onetheclub.com/club72/main",
+  "course": "https://www.onetheclub.com/club72/course"
+ },
+ {
+  "id": "샌드파인GC",
+  "name": "샌드파인GC",
+  "area": "강원",
+  "region": "강릉시",
+  "holes": 18,
+  "home": "https://www.lakaisandpine.co.kr/golf",
+  "course": "https://www.lakaisandpine.co.kr/golf/course_guide"
+ },
+ {
+  "id": "설악썬밸리CC",
+  "name": "설악썬밸리CC",
+  "area": "강원",
+  "region": "고성군",
+  "holes": 27,
+  "home": "https://www.sunvalley.co.kr/seorak/golf/intro",
+  "course": "https://www.sunvalley.co.kr/seorak/golf/course_intro"
+ },
+ {
+  "id": "소노펠리체CC 델피노",
+  "name": "소노펠리체CC 델피노",
+  "area": "강원",
+  "region": "고성군",
+  "holes": 18,
+  "home": "https://www.sonofelicecc.com/main.dp/dmparse.dm",
+  "course": "https://www.sonofelicecc.com/course.delpinoCourseInfo.dp/dmparse.dm"
+ },
+ {
+  "id": "파인리즈CC",
+  "name": "파인리즈CC",
+  "area": "강원",
+  "region": "고성군",
+  "holes": 27,
+  "home": "https://www.pineridge.co.kr/",
+  "course": "https://www.pineridge.co.kr/page/club/course.asp"
+ },
+ {
+  "id": "블랙밸리CC",
+  "name": "블랙밸리CC",
+  "area": "강원",
+  "region": "삼척시",
+  "holes": 18,
+  "home": "https://www.blackcc.co.kr/",
+  "course": "https://www.blackcc.co.kr/course/intro"
+ },
+ {
+  "id": "파인밸리CC",
+  "name": "파인밸리CC",
+  "area": "강원",
+  "region": "삼척시",
+  "holes": 18,
+  "home": "https://www.pinevalley.co.kr/index_pinevalley.asp",
+  "course": null
+ },
+ {
+  "id": "설해원",
+  "name": "설해원",
+  "area": "강원",
+  "region": "양양군",
+  "holes": null,
+  "home": "https://www.seolhaeone.com/golf/list.do",
+  "course": null
+ },
+ {
+  "id": "성문안CC",
+  "name": "성문안CC",
+  "area": "강원",
+  "region": "원주시",
+  "holes": 18,
+  "home": "https://ipark-golf.com/seongmunan",
+  "course": "https://ipark-golf.com/seongmunan/course"
+ },
+ {
+  "id": "센추리21CC",
+  "name": "센추리21CC",
+  "area": "강원",
+  "region": "원주시",
+  "holes": 45,
+  "home": "https://www.century21cc.co.kr/",
+  "course": "https://www.century21cc.co.kr/course_intro"
+ },
+ {
+  "id": "오크밸리CC",
+  "name": "오크밸리CC",
+  "area": "강원",
+  "region": "원주시",
+  "holes": 36,
+  "home": "https://ipark-golf.com/oakvalley",
+  "course": "https://ipark-golf.com/oakvalley/course"
+ },
+ {
+  "id": "오크힐스CC",
+  "name": "오크힐스CC",
+  "area": "강원",
+  "region": "원주시",
+  "holes": 18,
+  "home": "https://ipark-golf.com/oakhills",
+  "course": null
+ },
+ {
+  "id": "파크밸리CC",
+  "name": "파크밸리CC",
+  "area": "강원",
+  "region": "원주시",
+  "holes": 18,
+  "home": "https://www.parkvalley.co.kr/",
+  "course": "https://www.parkvalley.co.kr/Course/View.aspx"
+ },
+ {
+  "id": "하이원CC",
+  "name": "하이원CC",
+  "area": "강원",
+  "region": "정선군",
+  "holes": 18,
+  "home": "https://www.high1.com/golf/index.do",
+  "course": "https://www.high1.com/golf/contents.do?key=757"
+ },
+ {
+  "id": "라데나GC",
+  "name": "라데나GC",
+  "area": "강원",
+  "region": "춘천시",
+  "holes": 27,
+  "home": "https://www.ladena.co.kr/",
+  "course": null
+ },
+ {
+  "id": "라비에벨CC",
+  "name": "라비에벨CC",
+  "area": "강원",
+  "region": "춘천시",
+  "holes": 36,
+  "home": "https://www.lavieestbellegolfnresort.com/default.asp",
+  "course": "https://www.lavieestbellegolfnresort.com/oldcourse/pagesite/course/intro.asp"
+ },
+ {
+  "id": "엘리시안강촌CC",
+  "name": "엘리시안강촌CC",
+  "area": "강원",
+  "region": "춘천시",
+  "holes": null,
+  "home": "https://www.elysian.co.kr/about-gangchon/golf",
+  "course": null
+ },
+ {
+  "id": "제이드팰리스GC",
+  "name": "제이드팰리스GC",
+  "area": "강원",
+  "region": "춘천시",
+  "holes": 18,
+  "home": "https://www.jadepalacegc.com/kr/main.do",
+  "course": null
+ },
+ {
+  "id": "클럽디 더플레이어스",
+  "name": "클럽디 더플레이어스",
+  "area": "강원",
+  "region": "춘천시",
+  "holes": 27,
+  "home": "https://www.clubd.com/theplayers/index.do",
+  "course": "https://www.clubd.com/theplayers/course/courseIntro.do"
+ },
+ {
+  "id": "휘슬링락CC",
+  "name": "휘슬링락CC",
+  "area": "강원",
+  "region": "춘천시",
+  "holes": 27,
+  "home": "https://whistlingrockcc.com/",
+  "course": null
+ },
+ {
+  "id": "오투리조트 골프장",
+  "name": "오투리조트 골프장",
+  "area": "강원",
+  "region": "태백시",
+  "holes": null,
+  "home": "https://www.o2resort.com/main.xhtml",
+  "course": "https://www.o2resort.com/GLF/mountainCourse.jsp"
+ },
+ {
+  "id": "버치힐CC",
+  "name": "버치힐CC",
+  "area": "강원",
+  "region": "평창군",
+  "holes": 18,
+  "home": "https://www.yongpyong.co.kr/kor/golf/clubGuide/birchhillIntro.do",
+  "course": null
+ },
+ {
+  "id": "알펜시아700GC",
+  "name": "알펜시아700GC",
+  "area": "강원",
+  "region": "평창군",
+  "holes": 18,
+  "home": "https://www.alpensia.com/golf/gc700/introduction.do",
+  "course": null
+ },
+ {
+  "id": "알펜시아CC",
+  "name": "알펜시아CC",
+  "area": "강원",
+  "region": "평창군",
+  "holes": 27,
+  "home": "https://www.alpensia.com/golf/trooncc/introduction.do",
+  "course": "https://www.alpensia.com/golf/trooncc/course-info.do"
+ },
+ {
+  "id": "용평CC",
+  "name": "용평CC",
+  "area": "강원",
+  "region": "평창군",
+  "holes": 18,
+  "home": "https://www.yongpyong.co.kr/kor/golf/clubGuide/yongpyongIntro.do",
+  "course": "https://www.yongpyong.co.kr/kor/golf/course/yongpyongClub/fullMap.do"
+ },
+ {
+  "id": "휘닉스CC",
+  "name": "휘닉스CC",
+  "area": "강원",
+  "region": "평창군",
+  "holes": 18,
+  "home": "https://phoenixhnr.co.kr/page/main",
+  "course": null
+ },
+ {
+  "id": "샤인데일CC",
+  "name": "샤인데일CC",
+  "area": "강원",
+  "region": "홍천군",
+  "holes": null,
+  "home": "https://www.shinedale.com/",
+  "course": null
+ },
+ {
+  "id": "소노펠리체CC 비발디파크",
+  "name": "소노펠리체CC 비발디파크",
+  "area": "강원",
+  "region": "홍천군",
+  "holes": null,
+  "home": "https://www.sonofelicecc.com/main.dp/dmparse.dm",
+  "course": "https://www.sonofelicecc.com/course.sonoCourseInfo.dp/dmparse.dm"
+ },
+ {
+  "id": "클럽모우CC",
+  "name": "클럽모우CC",
+  "area": "강원",
+  "region": "홍천군",
+  "holes": 27,
+  "home": "https://www.clubmow.com/",
+  "course": "https://www.clubmow.com/course-info/courseInfo-infoForum-forum-introduction"
+ },
+ {
+  "id": "동원썬밸리CC",
+  "name": "동원썬밸리CC",
+  "area": "강원",
+  "region": "횡성군",
+  "holes": null,
+  "home": "https://www.sunvalley.co.kr/dongwon/golf/intro",
+  "course": null
+ },
+ {
+  "id": "벨라스톤CC",
+  "name": "벨라스톤CC",
+  "area": "강원",
+  "region": "횡성군",
+  "holes": 18,
+  "home": "https://www.bellastonecc.com/stone/main",
+  "course": "https://www.bellastonecc.com/stone/swp/course"
+ },
+ {
+  "id": "웰리힐리CC",
+  "name": "웰리힐리CC",
+  "area": "강원",
+  "region": "횡성군",
+  "holes": 36,
+  "home": "https://www.wellihillipark.com/golf",
+  "course": "https://www.wellihillipark.com/golf/course/info"
+ },
+ {
   "id": "레인보우힐스컨트리클럽",
   "name": "레인보우힐스컨트리클럽",
   "area": "충북",
