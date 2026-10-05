@@ -817,5 +817,302 @@
   "holes": 9,
   "home": "https://www.bitgoeulcc.co.kr/web/index.do",
   "course": "https://www.bitgoeulcc.co.kr/web/course/outline.do"
+ },
+ {
+  "id": "대구컨트리클럽",
+  "name": "대구컨트리클럽",
+  "area": "경북",
+  "region": "경산시",
+  "holes": 27,
+  "home": "https://www.daegucc.co.kr/",
+  "course": "https://www.daegucc.co.kr/Course/CourseInfo"
+ },
+ {
+  "id": "해내다CC",
+  "name": "해내다CC",
+  "area": "경북",
+  "region": "경산시",
+  "holes": 27,
+  "home": "https://www.interburgocc.com/",
+  "course": "https://www.interburgocc.com/View/CourseInfo"
+ },
+ {
+  "id": "강동 디아너스CC",
+  "name": "강동 디아너스CC",
+  "area": "경북",
+  "region": "경주시",
+  "holes": 27,
+  "home": "https://gj.kangdongcnl.com/",
+  "course": "https://gj.kangdongcnl.com/content/02course/01_01.jsp"
+ },
+ {
+  "id": "경주신라 컨트리클럽",
+  "name": "경주신라 컨트리클럽",
+  "area": "경북",
+  "region": "경주시",
+  "holes": 36,
+  "home": "https://sillacc.co.kr/",
+  "course": "https://sillacc.co.kr/swp/course"
+ },
+ {
+  "id": "마우나오션CC",
+  "name": "마우나오션CC",
+  "area": "경북",
+  "region": "경주시",
+  "holes": 27,
+  "home": "https://www.mauna.co.kr/field/main",
+  "course": "https://www.mauna.co.kr/field/swp/course"
+ },
+ {
+  "id": "구미CC",
+  "name": "구미CC",
+  "area": "경북",
+  "region": "구미시",
+  "holes": 27,
+  "home": "https://www.gumicc.com/",
+  "course": "https://www.gumicc.com/Course/Info.aspx"
+ },
+ {
+  "id": "블루원 상주CC",
+  "name": "블루원 상주CC",
+  "area": "경북",
+  "region": "상주시",
+  "holes": 18,
+  "home": "https://sj.blueone.com/",
+  "course": null
+ },
+ {
+  "id": "파미힐스CC",
+  "name": "파미힐스CC",
+  "area": "경북",
+  "region": "칠곡군",
+  "holes": 36,
+  "home": "https://www.palmyhillscc.co.kr/",
+  "course": "https://www.palmyhillscc.co.kr/course/course_info_south.asp"
+ },
+ {
+  "id": "오션힐스 포항CC",
+  "name": "오션힐스 포항CC",
+  "area": "경북",
+  "region": "포항시",
+  "holes": null,
+  "home": "https://www.oceanhills.com/index_pohang.asp",
+  "course": null
+ },
+ {
+  "id": "포항 컨트리클럽",
+  "name": "포항 컨트리클럽",
+  "area": "경북",
+  "region": "포항시",
+  "holes": 18,
+  "home": "https://www.pohangcc.com/",
+  "course": "https://www.pohangcc.com/swp/courseSea"
+ },
+ {
+  "id": "드비치 골프클럽",
+  "name": "드비치 골프클럽",
+  "area": "경남",
+  "region": "거제시",
+  "holes": 18,
+  "home": "https://www.debeach.co.kr/",
+  "course": "https://www.debeach.co.kr/course"
+ },
+ {
+  "id": "가야컨트리클럽",
+  "name": "가야컨트리클럽",
+  "area": "경남",
+  "region": "김해시",
+  "holes": 54,
+  "home": "https://www.gayacc.com/",
+  "course": "https://www.gayacc.com/course.php?location=01"
+ },
+ {
+  "id": "정산컨트리클럽",
+  "name": "정산컨트리클럽",
+  "area": "경남",
+  "region": "김해시",
+  "holes": 27,
+  "home": "https://www.jeongsancc.co.kr/",
+  "course": "https://www.jeongsancc.co.kr/course/courseIntro.do"
+ },
+ {
+  "id": "포웰CC",
+  "name": "포웰CC",
+  "area": "경남",
+  "region": "김해시",
+  "holes": 18,
+  "home": "https://www.4wellcc.com/",
+  "course": "https://www.4wellcc.com/course/courseIntro.asp"
+ },
+ {
+  "id": "사우스케이프 오너스클럽",
+  "name": "사우스케이프 오너스클럽",
+  "area": "경남",
+  "region": "남해군",
+  "holes": 18,
+  "home": "https://www.southcape.co.kr/",
+  "course": "https://www.southcape.co.kr/golf.asp"
+ },
+ {
+  "id": "아난티 남해 골프클럽",
+  "name": "아난티 남해 골프클럽",
+  "area": "경남",
+  "region": "남해군",
+  "holes": 18,
+  "home": "https://ananti.kr/ko/namhae",
+  "course": "https://ananti.kr/ko/namhae/NH0201"
+ },
+ {
+  "id": "리더스 컨트리클럽",
+  "name": "리더스 컨트리클럽",
+  "area": "경남",
+  "region": "밀양시",
+  "holes": 27,
+  "home": "https://www.leaderscc.com/",
+  "course": "https://www.leaderscc.com/course/overview"
+ },
+ {
+  "id": "통도 파인이스트 컨트리클럽",
+  "name": "통도 파인이스트 컨트리클럽",
+  "area": "경남",
+  "region": "양산시",
+  "holes": 36,
+  "home": "http://www.tongdocc.co.kr/",
+  "course": "http://www.tongdocc.co.kr/course/course1.asp"
+ },
+ {
+  "id": "용원GC",
+  "name": "용원GC",
+  "area": "경남",
+  "region": "창원시",
+  "holes": 27,
+  "home": "https://www.ywcc.co.kr/",
+  "course": "https://www.ywcc.co.kr/course/intro"
+ },
+ {
+  "id": "창원컨트리클럽",
+  "name": "창원컨트리클럽",
+  "area": "경남",
+  "region": "창원시",
+  "holes": 18,
+  "home": "https://changwoncountryclub.co.kr/",
+  "course": "https://changwoncountryclub.co.kr/Course/Course.aspx"
+ },
+ {
+  "id": "구니컨트리클럽",
+  "name": "구니컨트리클럽",
+  "area": "대구",
+  "region": "군위군",
+  "holes": 18,
+  "home": "https://www.gunicc.co.kr/",
+  "course": "https://www.gunicc.co.kr/pagesite/course/intro.asp"
+ },
+ {
+  "id": "군위오펠GC",
+  "name": "군위오펠GC",
+  "area": "대구",
+  "region": "군위군",
+  "holes": 18,
+  "home": "https://www.ophelgc.com/_Gunwi/",
+  "course": "https://www.ophelgc.com/_Gunwi/Course/Course.aspx"
+ },
+ {
+  "id": "이지스카이GC",
+  "name": "이지스카이GC",
+  "area": "대구",
+  "region": "군위군",
+  "holes": 18,
+  "home": "https://www.easyskycc.co.kr/",
+  "course": "https://www.easyskycc.co.kr/course/course01"
+ },
+ {
+  "id": "동래베네스트골프클럽",
+  "name": "동래베네스트골프클럽",
+  "area": "부산",
+  "region": "금정구",
+  "holes": 18,
+  "home": "https://rnc.samsungcnt.com/business/golf/dongrae/index.html",
+  "course": null
+ },
+ {
+  "id": "부산컨트리클럽",
+  "name": "부산컨트리클럽",
+  "area": "부산",
+  "region": "금정구",
+  "holes": 18,
+  "home": "https://www.bscc.co.kr/",
+  "course": "https://www.bscc.co.kr/%EC%BD%94%EC%8A%A4%EC%95%88%EB%82%B4%EB%8F%84"
+ },
+ {
+  "id": "베이사이드 골프클럽",
+  "name": "베이사이드 골프클럽",
+  "area": "부산",
+  "region": "기장군",
+  "holes": 27,
+  "home": "https://bayside.co.kr/",
+  "course": "https://bayside.co.kr/swp/lake_course"
+ },
+ {
+  "id": "아시아드 컨트리클럽",
+  "name": "아시아드 컨트리클럽",
+  "area": "부산",
+  "region": "기장군",
+  "holes": 27,
+  "home": "https://www.asiadcc.co.kr/",
+  "course": "https://www.asiadcc.co.kr/html/course/course_01.asp"
+ },
+ {
+  "id": "해운대비치골프앤리조트",
+  "name": "해운대비치골프앤리조트",
+  "area": "부산",
+  "region": "기장군",
+  "holes": 18,
+  "home": "https://www.haeundaebeachcc.com/main/mainPage.do",
+  "course": "https://www.haeundaebeachcc.com/course/course.do"
+ },
+ {
+  "id": "해운대컨트리클럽",
+  "name": "해운대컨트리클럽",
+  "area": "부산",
+  "region": "기장군",
+  "holes": 27,
+  "home": "https://www.haeundaecc.com/",
+  "course": "https://www.haeundaecc.com/Course/CourseInfo.aspx"
+ },
+ {
+  "id": "골드그린GC",
+  "name": "골드그린GC",
+  "area": "울산",
+  "region": "울주군",
+  "holes": 9,
+  "home": "https://www.goldgreen.co.kr/",
+  "course": "https://www.goldgreen.co.kr/swp/course"
+ },
+ {
+  "id": "골프존카운티 더골프",
+  "name": "골프존카운티 더골프",
+  "area": "울산",
+  "region": "울주군",
+  "holes": null,
+  "home": "https://www.thegolfclub.co.kr/index.asp",
+  "course": null
+ },
+ {
+  "id": "보라컨트리클럽",
+  "name": "보라컨트리클럽",
+  "area": "울산",
+  "region": "울주군",
+  "holes": 27,
+  "home": "https://www.boracc.com/",
+  "course": "https://www.boracc.com/course/course_main.asp"
+ },
+ {
+  "id": "울산컨트리클럽",
+  "name": "울산컨트리클럽",
+  "area": "울산",
+  "region": "울주군",
+  "holes": 27,
+  "home": "https://www.ulsancc.co.kr/",
+  "course": "https://www.ulsancc.co.kr/cour/course_guide.asp"
  }
 ]
