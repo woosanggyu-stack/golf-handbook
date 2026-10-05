@@ -152,6 +152,63 @@ li { margin: 4px 0; }
 }
 .pager .next { text-align: right; }
 
+/* 골프장 */
+.wide-tile {
+  display: flex; align-items: center; gap: 14px; margin-top: 16px;
+  background: var(--brand-soft); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 16px;
+}
+.wide-tile .tile-icon { font-size: 30px; }
+.wide-tile b { font-size: 18px; }
+.wide-tile small { color: var(--muted); font-size: 13px; }
+.club-list { margin-top: 12px; }
+.area-chips {
+  display: flex; gap: 6px; margin-top: 12px; padding-bottom: 4px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.area-chips::-webkit-scrollbar { display: none; }
+.area-chips[hidden] { display: none; }
+.area {
+  flex: none; font: inherit; font-size: 15px; cursor: pointer;
+  padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--text);
+}
+.area.on { background: var(--brand); border-color: var(--brand); color: var(--surface); font-weight: 700; }
+.add-club select {
+  width: 100%; font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px;
+}
+
+.btns { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+.btn {
+  display: block; text-align: center; font: inherit; font-weight: 700; cursor: pointer;
+  padding: 14px; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--text);
+}
+.btn.primary { background: var(--brand); border-color: var(--brand); color: var(--surface); }
+.btn.danger { width: 100%; margin-top: 20px; color: var(--accent); background: transparent; font-weight: 400; }
+.hint { color: var(--muted); font-size: 13px; margin: 6px 2px 0; }
+section .hint + .btn { margin-top: 10px; }
+.h1-sm { font-size: 22px; margin: 0; }
+.msg { margin: 16px 0 0; font-weight: 700; color: var(--brand); }
+.msg:empty { display: none; }
+.link { color: var(--brand); font-weight: 700; display: inline-block; margin-top: 10px; }
+textarea, .add-club input {
+  width: 100%; font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px;
+}
+textarea { resize: vertical; min-height: 140px; }
+.add-club {
+  margin-top: 20px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px 16px;
+}
+.add-club summary { cursor: pointer; font-weight: 700; color: var(--brand); }
+.add-club form { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.add-club button {
+  font: inherit; font-weight: 700; padding: 12px; border: 0; border-radius: 12px;
+  background: var(--brand); color: var(--surface); cursor: pointer;
+}
+
 /* 도식 색 */
 .d-ground { fill: var(--ground); }
 .d-sand { fill: var(--sand); }

@@ -1,6 +1,6 @@
 // 오프라인 지원: 네트워크 우선, 실패하면(산속 골프장 등) 캐시 사용.
 // 네트워크 우선이라 수정한 파일이 바로 반영되고, 한 번 열어 둔 내용은 오프라인에서도 보인다.
-const CACHE = "golf-handbook-v3";
+const CACHE = "golf-handbook-v4";
 const SHELL = [
   "./",
   "./index.html",
@@ -12,6 +12,7 @@ const SHELL = [
   "./css/style.css",
   "./js/app.js",
   "./js/data.js",
+  "./js/clubs.js",
   "./js/diagrams.js",
 ];
 

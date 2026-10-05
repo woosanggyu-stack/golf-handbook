@@ -1,0 +1,42 @@
+// 전국 골프장 목록 — tools/build_clubs.py로 생성. 직접 고치지 말고 tools/clubs_source.json을 고친 뒤 다시 생성.
+// 코스 정보는 각 골프장 공식 홈페이지로 연결만 한다(내용 복제 없음).
+// id: 메모·즐겨찾기 저장 키라서 바꾸면 안 된다. holes: 확인된 경우만, course: 공식 코스 안내 페이지(없으면 null)
+export const AREAS = ["서울", "경기", "인천", "강원", "충북", "충남", "대전", "세종", "전북", "전남", "광주", "경북", "경남", "대구", "부산", "울산", "제주"];
+
+export const CLUBS = [
+  {"id": "가평베네스트GC", "name": "가평베네스트GC", "area": "경기", "region": "가평군", "holes": 27, "home": "https://www.benestgolf.com/", "course": "https://www.benestgolf.com/reve/pc/gp-course/main.do"},
+  {"id": "크리스탈밸리CC", "name": "크리스탈밸리CC", "area": "경기", "region": "가평군", "holes": 18, "home": "https://www.crystalvalley.co.kr/", "course": "https://www.crystalvalley.co.kr/html/course/course01.asp"},
+  {"id": "뉴코리아CC", "name": "뉴코리아CC", "area": "경기", "region": "고양시", "holes": 18, "home": "https://www.newkoreacc.co.kr/", "course": "https://www.newkoreacc.co.kr/course/course01.asp"},
+  {"id": "서울한양CC", "name": "서울한양CC", "area": "경기", "region": "고양시", "holes": 36, "home": "https://www.hanyangcc.co.kr/", "course": "https://www.hanyangcc.co.kr/course/intro.asp"},
+  {"id": "남촌GC", "name": "남촌GC", "area": "경기", "region": "광주시", "holes": 18, "home": "https://www.namchoncc.co.kr/", "course": "https://www.namchoncc.co.kr/Course/Course"},
+  {"id": "뉴서울CC", "name": "뉴서울CC", "area": "경기", "region": "광주시", "holes": 36, "home": "https://www.newseoulgolf.co.kr/", "course": "https://www.newseoulgolf.co.kr/guide/course/courseInfo.asp"},
+  {"id": "이스트밸리CC", "name": "이스트밸리CC", "area": "경기", "region": "광주시", "holes": 27, "home": "https://www.eastvalley.co.kr/", "course": "https://www.eastvalley.co.kr/pagesite/course/intro.asp"},
+  {"id": "안양CC", "name": "안양CC", "area": "경기", "region": "군포시", "holes": 18, "home": "https://www.benestgolf.com/", "course": "https://www.benestgolf.com/reve/pc/ay-course/main.do"},
+  {"id": "비전힐스CC", "name": "비전힐스CC", "area": "경기", "region": "남양주시", "holes": null, "home": "https://www.visionhillscc.co.kr/", "course": "https://www.visionhillscc.co.kr/course/course01.asp"},
+  {"id": "남서울CC", "name": "남서울CC", "area": "경기", "region": "성남시", "holes": 18, "home": "https://www.nscc.co.kr/", "course": "https://www.nscc.co.kr/swp/course"},
+  {"id": "더헤븐CC", "name": "더헤븐CC", "area": "경기", "region": "안산시", "holes": 27, "home": "https://www.theheavenresort.com/ISLANDRESORT/main.asp", "course": "https://www.theheavenresort.com/ISLANDRESORT/course_course.asp"},
+  {"id": "마에스트로CC", "name": "마에스트로CC", "area": "경기", "region": "안성시", "holes": 18, "home": "https://www.maestrocc.co.kr/", "course": "https://www.maestrocc.co.kr/pagesite/course/intro.asp"},
+  {"id": "레이크우드CC", "name": "레이크우드CC", "area": "경기", "region": "양주시", "holes": 36, "home": "https://lakewood.co.kr/", "course": "https://lakewood.co.kr/swp/course"},
+  {"id": "송추CC", "name": "송추CC", "area": "경기", "region": "양주시", "holes": null, "home": "https://www.songchoo.co.kr/", "course": null},
+  {"id": "블루헤런GC", "name": "블루헤런GC", "area": "경기", "region": "여주시", "holes": 18, "home": "https://www.blueheron.co.kr/", "course": "https://www.blueheron.co.kr/swp/course/outline"},
+  {"id": "자유CC", "name": "자유CC", "area": "경기", "region": "여주시", "holes": null, "home": "https://www.jayucc.co.kr/", "course": null},
+  {"id": "트리니티클럽", "name": "트리니티클럽", "area": "경기", "region": "여주시", "holes": null, "home": "https://www.trinityclub.co.kr/", "course": null},
+  {"id": "페럼클럽", "name": "페럼클럽", "area": "경기", "region": "여주시", "holes": 18, "home": "https://www.ferrumclub.com/", "course": "https://www.ferrumclub.com/course/intro.asp"},
+  {"id": "해슬리나인브릿지", "name": "해슬리나인브릿지", "area": "경기", "region": "여주시", "holes": null, "home": "https://www.haesley.com/", "course": null},
+  {"id": "88CC", "name": "88CC", "area": "경기", "region": "용인시", "holes": 36, "home": "https://www.88countryclub.co.kr/", "course": "https://www.88countryclub.co.kr/Course/CourseInfo.aspx"},
+  {"id": "남부CC", "name": "남부CC", "area": "경기", "region": "용인시", "holes": 18, "home": "https://www.namboocc.co.kr/", "course": "https://www.namboocc.co.kr/course/courseIntro.do"},
+  {"id": "레이크사이드CC", "name": "레이크사이드CC", "area": "경기", "region": "용인시", "holes": 54, "home": "https://www.lakeside.kr/", "course": "https://www.lakeside.kr/course/courseIntro.do"},
+  {"id": "수원CC", "name": "수원CC", "area": "경기", "region": "용인시", "holes": null, "home": "https://www.suwoncc.co.kr/", "course": null},
+  {"id": "아시아나CC", "name": "아시아나CC", "area": "경기", "region": "용인시", "holes": 36, "home": "https://www.asianacc.co.kr/", "course": "https://www.asianacc.co.kr/course/index.asp"},
+  {"id": "태광CC", "name": "태광CC", "area": "경기", "region": "용인시", "holes": 36, "home": "https://taekwangcc.co.kr/", "course": "https://taekwangcc.co.kr/introduction/course"},
+  {"id": "플라자CC 용인", "name": "플라자CC 용인", "area": "경기", "region": "용인시", "holes": 36, "home": "https://www.plazacc.co.kr/plzcc/irsweb/golf2/main.do", "course": "https://www.plazacc.co.kr/plzcc/irsweb/golf2/course/yongin/yongin_club.do"},
+  {"id": "화산CC", "name": "화산CC", "area": "경기", "region": "용인시", "holes": null, "home": "https://www.hwasancc.com/", "course": null},
+  {"id": "비에이비스타CC", "name": "비에이비스타CC", "area": "경기", "region": "이천시", "holes": null, "home": "https://www.bavista.co.kr/", "course": null},
+  {"id": "서원밸리CC", "name": "서원밸리CC", "area": "경기", "region": "파주시", "holes": 18, "home": "https://www.seowongolf.co.kr/valley/main", "course": "https://www.seowongolf.co.kr/valley/course/info"},
+  {"id": "타이거CC", "name": "타이거CC", "area": "경기", "region": "파주시", "holes": 18, "home": "https://www.tigercc.co.kr/", "course": "https://www.tigercc.co.kr/course/course.asp"},
+  {"id": "몽베르CC", "name": "몽베르CC", "area": "경기", "region": "포천시", "holes": null, "home": "https://www.montvertcc.com/", "course": "https://www.montvertcc.com/public/swp/courseInfo"},
+  {"id": "아도니스CC", "name": "아도니스CC", "area": "경기", "region": "포천시", "holes": null, "home": "https://www.adoniscc.co.kr/", "course": null},
+  {"id": "일동레이크GC", "name": "일동레이크GC", "area": "경기", "region": "포천시", "holes": null, "home": "https://www.ildonglakes.co.kr/", "course": null},
+  {"id": "기흥CC", "name": "기흥CC", "area": "경기", "region": "화성시", "holes": null, "home": "https://www.ghcc.kr/", "course": null},
+  {"id": "리베라CC", "name": "리베라CC", "area": "경기", "region": "화성시", "holes": 36, "home": "https://www.shinangolf.com/club/rivieracc", "course": "https://www.shinangolf.com/club/course/rivieracc"},
+];
