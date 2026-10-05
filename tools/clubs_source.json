@@ -315,6 +315,285 @@
   "course": "https://www.shinangolf.com/club/course/rivieracc"
  },
  {
+  "id": "레인보우힐스컨트리클럽",
+  "name": "레인보우힐스컨트리클럽",
+  "area": "충북",
+  "region": "음성군",
+  "holes": 27,
+  "home": "https://www.rainbowhills.co.kr/",
+  "course": "https://www.rainbowhills.co.kr/pagesite/course/intro.asp"
+ },
+ {
+  "id": "젠스필드컨트리클럽",
+  "name": "젠스필드컨트리클럽",
+  "area": "충북",
+  "region": "음성군",
+  "holes": 18,
+  "home": "http://www.zensfield.com/",
+  "course": "http://www.zensfield.com/pagesite/course/intro.asp"
+ },
+ {
+  "id": "천룡CC",
+  "name": "천룡CC",
+  "area": "충북",
+  "region": "진천군",
+  "holes": null,
+  "home": "https://www.crcc.co.kr/",
+  "course": "https://www.crcc.co.kr/course/course01.asp"
+ },
+ {
+  "id": "그랜드컨트리클럽",
+  "name": "그랜드컨트리클럽",
+  "area": "충북",
+  "region": "청주시",
+  "holes": 27,
+  "home": "https://www.grandgolf.co.kr/",
+  "course": "https://www.grandgolf.co.kr/html/course/course_01.asp"
+ },
+ {
+  "id": "세레니티컨트리클럽",
+  "name": "세레니티컨트리클럽",
+  "area": "충북",
+  "region": "청주시",
+  "holes": 27,
+  "home": "https://www.serenitycc.co.kr/index.asp",
+  "course": "https://www.serenitycc.co.kr/course/intro.asp"
+ },
+ {
+  "id": "올데이 청주떼제베",
+  "name": "올데이 청주떼제베",
+  "area": "충북",
+  "region": "청주시",
+  "holes": 36,
+  "home": "https://www.adtgv.co.kr/",
+  "course": "https://www.adtgv.co.kr/course/tgv1.asp"
+ },
+ {
+  "id": "이븐데일 골프앤리조트",
+  "name": "이븐데일 골프앤리조트",
+  "area": "충북",
+  "region": "청주시",
+  "holes": 18,
+  "home": "https://www.evendale.co.kr/",
+  "course": "https://www.evendale.co.kr/course/courseInfo.asp"
+ },
+ {
+  "id": "대영베이스CC",
+  "name": "대영베이스CC",
+  "area": "충북",
+  "region": "충주시",
+  "holes": 27,
+  "home": "https://basecc.co.kr/",
+  "course": null
+ },
+ {
+  "id": "동촌골프클럽",
+  "name": "동촌골프클럽",
+  "area": "충북",
+  "region": "충주시",
+  "holes": 18,
+  "home": "http://www.dongchongc.co.kr/",
+  "course": "http://www.dongchongc.co.kr/Course/CourseInfo"
+ },
+ {
+  "id": "센테리움컨트리클럽",
+  "name": "센테리움컨트리클럽",
+  "area": "충북",
+  "region": "충주시",
+  "holes": 27,
+  "home": "https://www.centeriumcc.com/",
+  "course": "https://www.centeriumcc.com/course/course_intro.asp"
+ },
+ {
+  "id": "시그너스컨트리클럽",
+  "name": "시그너스컨트리클럽",
+  "area": "충북",
+  "region": "충주시",
+  "holes": 27,
+  "home": "https://www.cygnuscc.com/",
+  "course": "https://www.cygnuscc.com/sub/cos.asp"
+ },
+ {
+  "id": "올데이 로얄포레",
+  "name": "올데이 로얄포레",
+  "area": "충북",
+  "region": "충주시",
+  "holes": null,
+  "home": "https://www.royalforet.com/",
+  "course": "https://www.royalforet.com/course/r1.asp"
+ },
+ {
+  "id": "일레븐컨트리클럽",
+  "name": "일레븐컨트리클럽",
+  "area": "충북",
+  "region": "충주시",
+  "holes": 18,
+  "home": "https://www.elevencc.co.kr/",
+  "course": "https://www.elevencc.co.kr/swp/in_course"
+ },
+ {
+  "id": "킹스데일골프클럽",
+  "name": "킹스데일골프클럽",
+  "area": "충북",
+  "region": "충주시",
+  "holes": null,
+  "home": "https://www.kingsdale.co.kr/",
+  "course": null
+ },
+ {
+  "id": "에딘버러컨트리클럽",
+  "name": "에딘버러컨트리클럽",
+  "area": "충남",
+  "region": "금산군",
+  "holes": 18,
+  "home": "https://www.edinburgh.co.kr/",
+  "course": "https://www.edinburgh.co.kr/Course/Index"
+ },
+ {
+  "id": "더힐컨트리클럽",
+  "name": "더힐컨트리클럽",
+  "area": "충남",
+  "region": "논산시",
+  "holes": 9,
+  "home": "https://www.thehill.co.kr/",
+  "course": "https://www.thehill.co.kr/Course/CourseIntro.aspx"
+ },
+ {
+  "id": "아리스타컨트리클럽",
+  "name": "아리스타컨트리클럽",
+  "area": "충남",
+  "region": "논산시",
+  "holes": 18,
+  "home": "https://www.aristacc.co.kr/",
+  "course": "https://www.aristacc.co.kr/course/course_info"
+ },
+ {
+  "id": "롯데스카이힐 부여CC",
+  "name": "롯데스카이힐 부여CC",
+  "area": "충남",
+  "region": "부여군",
+  "holes": 18,
+  "home": "https://www.lotteskyhill.com/club/club-intro/club-intro-buyeo",
+  "course": "https://www.lotteskyhill.com/club/course/club-course-buyeo"
+ },
+ {
+  "id": "백제컨트리클럽",
+  "name": "백제컨트리클럽",
+  "area": "충남",
+  "region": "부여군",
+  "holes": 27,
+  "home": "https://www.baekjecc.com/index.asp",
+  "course": "https://www.baekjecc.com/pagesite/course/intro.asp"
+ },
+ {
+  "id": "서산수골프앤리조트",
+  "name": "서산수골프앤리조트",
+  "area": "충남",
+  "region": "서산시",
+  "holes": null,
+  "home": "https://seosansoo.com/",
+  "course": null
+ },
+ {
+  "id": "SG아름다운골프&리조트",
+  "name": "SG아름다운골프&리조트",
+  "area": "충남",
+  "region": "아산시",
+  "holes": 27,
+  "home": "https://www.arumdaunresort.com/",
+  "course": "https://www.arumdaunresort.com/html/course01.asp"
+ },
+ {
+  "id": "골프존카운티 천안",
+  "name": "골프존카운티 천안",
+  "area": "충남",
+  "region": "천안시",
+  "holes": 18,
+  "home": "https://www.golfzoncounty.com/golfclub/main?golfclubSeq=47",
+  "course": "https://www.golfzoncounty.com/golfclub/course?golfclubSeq=47"
+ },
+ {
+  "id": "마론컨트리클럽",
+  "name": "마론컨트리클럽",
+  "area": "충남",
+  "region": "천안시",
+  "holes": 18,
+  "home": "http://www.maronnewday.com/index.asp",
+  "course": "http://www.maronnewday.com/html/course01.asp"
+ },
+ {
+  "id": "상록골프앤리조트",
+  "name": "상록골프앤리조트",
+  "area": "충남",
+  "region": "천안시",
+  "holes": 27,
+  "home": "https://www.sangnokresort.co.kr/",
+  "course": "https://www.sangnokresort.co.kr/M040101"
+ },
+ {
+  "id": "우정힐스컨트리클럽",
+  "name": "우정힐스컨트리클럽",
+  "area": "충남",
+  "region": "천안시",
+  "holes": 18,
+  "home": "https://whcc.kolon.co.kr/index.asp",
+  "course": "https://whcc.kolon.co.kr/pagesite/course/intro.asp"
+ },
+ {
+  "id": "골든베이골프&리조트",
+  "name": "골든베이골프&리조트",
+  "area": "충남",
+  "region": "태안군",
+  "holes": 27,
+  "home": "https://new.goldenbay.kr/",
+  "course": "https://new.goldenbay.kr/course/course-info.asp"
+ },
+ {
+  "id": "솔라고컨트리클럽",
+  "name": "솔라고컨트리클럽",
+  "area": "충남",
+  "region": "태안군",
+  "holes": 36,
+  "home": "http://www.sollago.co.kr/index.asp",
+  "course": "http://www.sollago.co.kr/pagesite/course/intro.asp"
+ },
+ {
+  "id": "유성컨트리클럽",
+  "name": "유성컨트리클럽",
+  "area": "대전",
+  "region": "유성구",
+  "holes": 18,
+  "home": "https://www.yscc.co.kr/",
+  "course": "https://www.yscc.co.kr/course/allcourse.asp"
+ },
+ {
+  "id": "레이캐슬CC",
+  "name": "레이캐슬CC",
+  "area": "세종",
+  "region": "세종시",
+  "holes": 27,
+  "home": "https://www.sjraycastle.com/",
+  "course": "https://www.sjraycastle.com/Golf/Course/Sejong.aspx"
+ },
+ {
+  "id": "세종에머슨컨트리클럽",
+  "name": "세종에머슨컨트리클럽",
+  "area": "세종",
+  "region": "세종시",
+  "holes": 27,
+  "home": "https://www.sejongemerson.co.kr/",
+  "course": "https://www.sejongemerson.co.kr/golf/course.asp?formname=Lake&hole=0"
+ },
+ {
+  "id": "세종필드골프클럽",
+  "name": "세종필드골프클럽",
+  "area": "세종",
+  "region": "세종시",
+  "holes": 18,
+  "home": "https://www.sejongcc.com/",
+  "course": "https://www.sejongcc.com/course/intro"
+ },
+ {
   "id": "고창CC",
   "name": "고창CC",
   "area": "전북",

@@ -6,6 +6,7 @@
 원본 데이터는 tools/clubs_source.json, 앱이 읽는 js/clubs.js는 여기서 생성한다.
 id는 메모·즐겨찾기 저장 키라서 한 번 정해지면 바꾸지 않는다(골프장 이름).
 """
+import html
 import json
 import ssl
 import sys
@@ -29,7 +30,7 @@ def fetch_status(url):
     for ctx in (None, ssl._create_unverified_context()):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=20, context=ctx) as r:
+            with urllib.request.urlopen(req, timeout=45, context=ctx) as r:
                 return r.status
         except urllib.error.HTTPError as e:
             return e.code
@@ -65,6 +66,8 @@ def check(clubs):
 
 
 def normalize(item):
+    # 조사 결과에 "&amp;"처럼 HTML 이스케이프가 섞여 오는 경우가 있다
+    item = {k: html.unescape(v) if isinstance(v, str) else v for k, v in item.items()}
     area = item.get("area")
     region = item["region"].strip()
     if not area:  # 서울·경기 조사 결과에는 area가 없다
