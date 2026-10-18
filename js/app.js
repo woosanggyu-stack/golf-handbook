@@ -228,6 +228,7 @@ function viewClubs() {
         </select>
         <input name="region" required placeholder="시·군·구 (예: 용인시)" maxlength="20">
         <input name="home" required type="url" placeholder="공식 홈페이지 주소 (https://…)">
+        <input name="course" type="url" placeholder="공식 코스 안내 주소 (선택, https://…)">
         <button type="submit">추가</button>
       </form>
     </details>
@@ -270,7 +271,9 @@ function viewClubs() {
     e.preventDefault();
     const f = new FormData(e.target);
     const home = String(f.get("home")).trim();
-    if (!isWebUrl(home)) return alert("http:// 또는 https:// 로 시작하는 주소를 넣어주세요.");
+    const course = String(f.get("course") || "").trim();
+    if (!isWebUrl(home) || (course && !isWebUrl(course)))
+      return alert("http:// 또는 https:// 로 시작하는 주소를 넣어주세요.");
     const club = {
       id: "custom-" + Date.now(),
       name: String(f.get("name")).trim(),
@@ -278,7 +281,7 @@ function viewClubs() {
       region: String(f.get("region")).trim(),
       holes: null,
       home,
-      course: null,
+      course: course || null,
       custom: true,
     };
     customClubs.push(club);
@@ -413,7 +416,7 @@ function mergeBackup(d) {
     if (c && c.id && c.name && !knownIds.has(c.id) && isWebUrl(c.home)) {
       customClubs.push({
         id: String(c.id), name: String(c.name), area: String(c.area || ""), region: String(c.region || ""),
-        holes: null, home: c.home, course: null, custom: true,
+        holes: null, home: c.home, course: isWebUrl(c.course) ? c.course : null, custom: true,
       });
     }
   }
