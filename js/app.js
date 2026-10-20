@@ -290,6 +290,48 @@ function viewClubs() {
   });
 }
 
+// ── 내 사진 (이 기기의 IndexedDB에만 저장, 서버로 보내지 않음) ──
+let photoDbPromise;
+const photoDb = () =>
+  (photoDbPromise ??= new Promise((resolve, reject) => {
+    const req = indexedDB.open("golf-handbook-photos", 1);
+    req.onupgradeneeded = () => {
+      const s = req.result.createObjectStore("photos", { keyPath: "id", autoIncrement: true });
+      s.createIndex("clubId", "clubId");
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  }));
+const photoTx = async (mode, fn) => {
+  const db = await photoDb();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction("photos", mode);
+    const result = fn(tx.objectStore("photos"));
+    tx.oncomplete = () => resolve(result.result);
+    tx.onerror = tx.onabort = () => reject(tx.error);
+  });
+};
+const photosOf = (clubId) => photoTx("readonly", (s) => s.index("clubId").getAll(clubId));
+const addPhoto = (clubId, blob) => photoTx("readwrite", (s) => s.add({ clubId, blob, ts: Date.now() }));
+const removePhoto = (id) => photoTx("readwrite", (s) => s.delete(id));
+const removeClubPhotos = async (clubId) => {
+  for (const p of await photosOf(clubId)) await removePhoto(p.id);
+};
+
+// 폰 사진은 수 MB라서 긴 변 1280px, JPEG로 줄여서 저장한다.
+async function compressImage(file, maxSide = 1280) {
+  const bmp = await createImageBitmap(file, { imageOrientation: "from-image" });
+  const scale = Math.min(1, maxSide / Math.max(bmp.width, bmp.height));
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.round(bmp.width * scale);
+  canvas.height = Math.round(bmp.height * scale);
+  canvas.getContext("2d").drawImage(bmp, 0, 0, canvas.width, canvas.height);
+  bmp.close?.();
+  return new Promise((resolve, reject) =>
+    canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("변환 실패"))), "image/jpeg", 0.82),
+  );
+}
+
 function viewClub(id) {
   const c = clubOf(decodeURIComponent(id || ""));
   if (!c) return viewClubs();
@@ -335,6 +377,15 @@ function viewClub(id) {
         <p class="hint" id="memo-status">입력하면 이 기기에 자동 저장돼요.</p>
       </section>
 
+      <section>
+        <h3><span class="num">📷</span>내 사진</h3>
+        <div id="photos" class="photos"></div>
+        <label class="btn photo-add">＋ 사진 추가
+          <input id="photo-input" type="file" accept="image/*" multiple hidden>
+        </label>
+        <p class="hint" id="photo-status">내가 찍은 사진(코스 기록 등)만 넣어 주세요. 이 기기에만 저장되고 인터넷으로 보내지 않아요. 메모 백업 파일에는 포함되지 않아요.</p>
+      </section>
+
       ${c.custom ? '<button id="del" class="btn danger">이 골프장 목록에서 삭제</button>' : ""}
     </article>`;
 
@@ -357,8 +408,78 @@ function viewClub(id) {
     }, 400);
   });
 
+  // 사진: 목록 그리기, 추가, 크게 보기·삭제
+  const $photos = document.getElementById("photos");
+  const $photoStatus = document.getElementById("photo-status");
+  const photoUrls = [];
+  const showPhotoError = (e) => {
+    $photoStatus.textContent = `사진 저장소를 쓸 수 없어요 (${e?.message || e}). 브라우저 설정이나 시크릿 모드를 확인해 주세요.`;
+  };
+  const renderPhotos = async () => {
+    let list;
+    try {
+      list = await photosOf(c.id);
+    } catch (e) {
+      return showPhotoError(e);
+    }
+    if (!$photos.isConnected) return; // 그사이 다른 화면으로 이동
+    photoUrls.splice(0).forEach(URL.revokeObjectURL);
+    $photos.innerHTML = list
+      .map((p) => {
+        const url = URL.createObjectURL(p.blob);
+        photoUrls.push(url);
+        return `<button type="button" class="ph" data-id="${p.id}" aria-label="사진 크게 보기"><img src="${url}" alt="" loading="lazy"></button>`;
+      })
+      .join("");
+  };
+  const openPhoto = (pid) => {
+    const img = $photos.querySelector(`.ph[data-id="${pid}"] img`);
+    if (!img) return;
+    const box = document.createElement("div");
+    box.className = "ph-viewer";
+    box.innerHTML = `<img src="${img.src}" alt="">
+      <div class="ph-actions"><button type="button" data-act="close" class="btn">닫기</button><button type="button" data-act="del" class="btn danger">이 사진 삭제</button></div>`;
+    box.addEventListener("click", async (e) => {
+      const act = e.target.dataset.act;
+      if (e.target.tagName === "IMG" || act === "close") return box.remove();
+      if (act === "del" && confirm("이 사진을 삭제할까요?")) {
+        try {
+          await removePhoto(Number(pid));
+        } catch (err) {
+          showPhotoError(err);
+        }
+        box.remove();
+        renderPhotos();
+      }
+    });
+    document.body.append(box);
+  };
+  $photos.addEventListener("click", (e) => {
+    const b = e.target.closest(".ph");
+    if (b) openPhoto(b.dataset.id);
+  });
+  document.getElementById("photo-input").addEventListener("change", async (e) => {
+    const files = [...e.target.files];
+    e.target.value = ""; // 같은 사진을 다시 고를 수 있게
+    let ok = 0;
+    for (const [i, f] of files.entries()) {
+      $photoStatus.textContent = `사진 저장 중… (${i + 1}/${files.length})`;
+      try {
+        await addPhoto(c.id, await compressImage(f));
+        ok++;
+      } catch (err) {
+        showPhotoError(err);
+        return;
+      }
+    }
+    $photoStatus.textContent = ok ? `사진 ${ok}장을 저장했어요 ✓` : "저장된 사진이 없어요.";
+    renderPhotos();
+  });
+  renderPhotos();
+
   document.getElementById("del")?.addEventListener("click", () => {
-    if (!confirm(`'${c.name}'을(를) 삭제할까요? 메모도 함께 지워져요.`)) return;
+    if (!confirm(`'${c.name}'을(를) 삭제할까요? 메모와 사진도 함께 지워져요.`)) return;
+    removeClubPhotos(c.id).catch(() => {});
     customClubs = customClubs.filter((x) => x.id !== c.id);
     save(CUSTOM_CLUB_KEY, customClubs);
     delete clubMemos[c.id];
