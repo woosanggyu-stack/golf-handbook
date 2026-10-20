@@ -299,6 +299,10 @@ function viewClub(id) {
     isWebUrl(url)
       ? `<a class="btn${primary ? " primary" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`
       : "";
+  // 공략 콘텐츠를 복제하지 않고, 골프장 이름으로 검색 결과 페이지에 연결만 한다.
+  const q = (s) => encodeURIComponent(s);
+  const searchLink = (url, label) =>
+    `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`;
   $app.innerHTML = `
     <article class="card">
       <header class="card-head">
@@ -314,6 +318,16 @@ function viewClub(id) {
         ${link(c.home, "공식 홈페이지", !c.course)}
       </div>
       <p class="hint">공식 사이트가 새 창으로 열려요. 인터넷 연결이 필요해요.</p>
+
+      <section>
+        <h3><span class="num">🔎</span>공략 정보 찾기</h3>
+        <div class="btns">
+          ${searchLink(`https://www.youtube.com/results?search_query=${q(c.name + " 공략")}`, "▶ 공략 영상 검색 (유튜브)")}
+          ${searchLink(`https://search.naver.com/search.naver?ssc=tab.blog.all&query=${q(c.name + " 코스 공략")}`, "📝 공략·후기 검색 (네이버 블로그)")}
+          ${searchLink(`https://search.naver.com/search.naver?query=${q(c.name + " 스마트스코어 코스")}`, "📱 골프 앱 코스 정보 검색")}
+        </div>
+        <p class="hint">검색 결과는 각 사이트에서 새 창으로 열려요. 골프 앱의 상세 지도는 일부 유료일 수 있어요.</p>
+      </section>
 
       <section>
         <h3><span class="num">✎</span>내 메모</h3>
